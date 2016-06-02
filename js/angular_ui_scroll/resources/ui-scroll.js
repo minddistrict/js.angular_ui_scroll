@@ -532,7 +532,7 @@ angular.module('ui.scroll', []).directive('uiScrollViewport', function () {
     var itemName = match[1];
     var datasourceName = match[2];
     var bufferSize = Math.max(3, +attr.bufferSize || 10);
-    var startIndex = +attr.startIndex || 1;
+    var startIndex = +attr.startIndex;
 
     return function link($scope, element, $attr, controllers, linker) {
       // starting from angular 1.2 compileLinker usage is deprecated
